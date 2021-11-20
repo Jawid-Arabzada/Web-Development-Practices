@@ -1,0 +1,109 @@
+html {
+    box-sizing: border-box;
+    font-family: Barlow, sans-serif;
+}
+body {
+    background-color: rgb(250, 249, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.panel {
+    background-color: white;
+    border-radius: 10px;
+    padding:25px 15px;
+    width: 100%;
+    max-width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+
+.pricing-plan:nth-child(2) {
+    border:2px solid rgb(187, 32, 88);
+}
+
+.pricing-header {
+   color: rgb(55, 63, 73);
+}
+
+.pricing-price {
+    line-height: 1;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.pricing-features {
+    
+    line-height: 30px;
+    padding-left: 0px;
+    text-align: left;
+}
+
+.pricing-features-item {
+    display: flex;
+    -moz-box-align: baseline;
+    align-items: baseline;
+    list-style: outside none none;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    color: rgb(55, 63, 73);
+}
+
+/* .pricing-cardstyles__TickIcon-sc-s3qque-0{
+    padding: 5px;
+} */
+
+.pricing-button {
+    border: 1px solid rgb(187, 32, 88);
+    border-radius: 35px;
+    background-color: white;
+    color:rgb(187, 32, 88); 
+    display: inline-block;
+    padding:15px ;
+    text-decoration: none;
+    margin:25px 0;
+    transform: background-color 200ms ease-in-out;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.pricing-button:hover {
+    background-color:rgb(187, 32, 88); 
+    color: white; 
+}
+
+.is-featured{
+    background-color: rgb(187, 32, 88);
+    color: white;
+    
+}
+.is-featured:hover {
+    background-color:rgb(150, 32, 88);
+    border-color: rgb(187, 32, 88);
+}
+h1 {
+    font-family: Barlow, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@media (min-width:900px){
+    .panel {
+        flex-direction: row;
+    }
+    .pricing-plan {
+        
+        padding:25px 50px;
+    }
+    .pricing-plan:nth-child(2) {
+        border:2px solid rgb(187, 32, 88);
+    }
+}
